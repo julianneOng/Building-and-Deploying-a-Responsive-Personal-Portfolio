@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Building and Deploying a Responsive Personal Portfolio</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Julianne</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#project" class="nav__link">Project</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Julianne</span><br> Web Designer</h1>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/profile.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Julianne G.Ong</h2>
+                        <p class="about__text">I am a male 23-year-old who currently resides in the Aspen Subdivision Communal Davao City. My birthday is October 02, 200, and my personal hobbies include playing sports like badminton, table tennis, and basketball and watching Netflix. Bicycling is also one of my recreational hobbies. I was born in San Pedro Laguna, Manila City.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Programming Skills</h2>
+                        <p class="skills__text">Programming Language  such as HTML,CSS,Javascript and Java I had background hands on skill</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcZJREFUSEvF1UvITWEUxvHfFzGQKDOlzCQGKBlIFKHkkoHMRDJzSULJTAkpXxgpmUkGcokiuYwM5JKSqTATCROX2KsWbbuzz7udOn1vncHZ73rW/33W+5x9Rgx5jQy5vzEBnMHcAZ29wM66tpeDa1g7ICC060uAc9g+ICC0O0qAIziURafwqQCbgj1ZE9rDJcAujGbRPDwvAObjSdaE9nQJsAmXsuhZHwexFydfjVtZH9rLJcAy3OtwB1ewEVtxPutD+6AEmI2XDcCrmqs/W09xFQdxNB+GNmr/rl4xnYb3DcDDytXSFlcRhN25F9oPJUBAv2F8rfArHjcAx3ETF6tTb66S971yMhG/SoDYf4fp1Y8mxrAXiytgRLC+1uF63lfM/i1mNF22vYuicUQ0khIxXIIYU30tTFcx81l5mAVdARG7iN9rzEzRnHTyo9p7VAvCR0zNca3pCriALYhmZ3ED9/N79JiA5ZXDDbVXQ2gisv+sthEdw/5G7eeceVx+nHRSj0s/0BWwr2pwoiWWbY9Dc7IrINKwDSur18AijGvp+jPv407+mt90BdTrJmMFViUwmt7Oz1186ed0TP4y/3P0/cuH7uA3NCNTGc7pG8UAAAAASUVORK5CYII="/>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcZJREFUSEvF1UvITWEUxvHfFzGQKDOlzCQGKBlIFKHkkoHMRDJzSULJTAkpXxgpmUkGcokiuYwM5JKSqTATCROX2KsWbbuzz7udOn1vncHZ73rW/33W+5x9Rgx5jQy5vzEBnMHcAZ29wM66tpeDa1g7ICC060uAc9g+ICC0O0qAIziURafwqQCbgj1ZE9rDJcAujGbRPDwvAObjSdaE9nQJsAmXsuhZHwexFydfjVtZH9rLJcAy3OtwB1ewEVtxPutD+6AEmI2XDcCrmqs/W09xFQdxNB+GNmr/rl4xnYb3DcDDytXSFlcRhN25F9oPJUBAv2F8rfArHjcAx3ETF6tTb66S971yMhG/SoDYf4fp1Y8mxrAXiytgRLC+1uF63lfM/i1mNF22vYuicUQ0khIxXIIYU30tTFcx81l5mAVdARG7iN9rzEzRnHTyo9p7VAvCR0zNca3pCriALYhmZ3ED9/N79JiA5ZXDDbVXQ2gisv+sthEdw/5G7eeceVx+nHRSj0s/0BWwr2pwoiWWbY9Dc7IrINKwDSur18AijGvp+jPv407+mt90BdTrJmMFViUwmt7Oz1186ed0TP4y/3P0/cuH7uA3NCNTGc7pG8UAAAAASUVORK5CYII="/>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAShJREFUSEvt1b8rhXEUx/HXTbFZ5McgA4pFiQys/AWUzXAzKIOymGwGmxJSSjYbf4LVYDdaTBhkEIsf3299Hz3R7f6+Ge53eYbvc87nvD/nPOcpaPIpNDm/lgt8NYjop/DfBG2BzOG2RWVn7f9atIQBHOENW7jFJDYxmNhqJujDCK6xhhOM4hELuKhXoDcljAJTuMMTngNVvMsqr5kgL7CBA8wEgnWsoKNegrxFn9jFfqKYxhW6cyR/tmm5XdSP4dSDbFY/Uj9OQ/K91OyKLYrBx5jFeLCkB/M4wyrm0iRdhmlaDhbtYLsagheM4SH3aR2m5NGSOKLZ6cJNmKSJagRi8D3O8Y4hFFPG10QXn51YTMXE64otKrsTSrxQUqDWhCXjWv5PbjjBN42gOxnLfKPpAAAAAElFTkSuQmCC"/>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcRJREFUSEu11E2ojVEUxvHf9THCJZkgAxOTm48QIwOKa6BMDAwYKaUkhTKUTEwoZaRkohSZyMSVAQoZSIooA1IU+Ur5/thL6+o4nXv2Oefes+t0envfvf57Pc+z14A+r4E+1zcewAZcqR2wV8BU7MKJfgF24iFu9gOwMk+/o1Y83ncr0QFswSYswizcwtuxYN0AjmAVtqf2x3Cn1kWngJBjH1bgNC7ifK14NxIdxXOcxKsiyzDuTyRgGbbiIC5jEGvxowbpVKKoExKdw5Tiw9ME3JhIQNRajxGcwm58TcDq8vwmwf8x23UwhM04ixf4mTvjFs/Ed/zC7wRdKHHdg2eNhHaANYjcP8LnJinep/7RzeN8d7yk7BKudQqI72ZgW0rSaOgcLCgd3sticZh1OJwd/WPUTA5D92I6FpcLNhvTMqq3cQbfsBB3WxleA8Se+fiED7XE9ArYmPmPeRMdxJqbkT3ULEkzpFUHMcD2F02v4wFe5qbJWIp3mZRI0OgKr+Y1GN7Wg+XlMsVgi/UkJ+WkFu1HbL9kRAManoSUowf6u6XmQZi8JEdDfB/PIU/84sTx/xGvM55XO5GoFy/H3FPrYNywP6nQUhlkIl6FAAAAAElFTkSuQmCC"/>
+                                <span class="skills__name">Java</span>
+                            </div>
+                            <div class="skills__bar skills__java">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div> 
+                        <img src="assets/img/Programming Language_Skill.jpg" alt="" class="skills__img">             
+                        
+                        
+                    </div>
+                    <div>
+                        <h2 class="skills1__subtitle">Computer Hardware And Video  Editing Skills</h2>
+                        <p class="skills1__text"> I am certified proficient assessment skill in the in Computer Hardware such as reformatting,assemble and disassemble of the physical parts and service on the computer.Then I had knowledge to do video editing software and animation just like Filmora,Photoshop and Blender</p>
+                        <div class="skills1__data">
+                            <div class="skills1__names">
+                                
+                                <span class="skills1__name">Reformat OF PC</span>
+                            </div>
+                            <div class="skills1__bar skills1__reformat">
+
+                            </div>
+                            <div>
+                                <span class="skills1__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills1__data">
+                            <div class="skills1__names">
+                                
+                                <span class="skills1__name">Assemble & Disassemble</span>
+                            </div>
+                            <div class="skills1__bar skills1__AD">
+                                
+                            </div>
+                            <div>
+                                <span class="skills1__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills1__data">
+                            <div class="skills1__names">
+                                
+                                <span class="skills1__name">Filmora</span>
+                            </div>
+                            <div class="skills1__bar skills1__filmora">
+                                
+                            </div>
+                            <div>
+                                <span class="skills1__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                               
+                                <span class="skills__name">Photoshop</span>
+                            </div>
+                            <div class="skills__bar skills1__photoshop">
+                                
+                            </div>
+                            <div>
+                                <span class="skills1__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills1__data">
+                            <div class="skills1__names">
+                                
+                                <span class="skills1__name">Blender</span>
+                            </div>
+                            <div class="skills1__bar skills1__blender">
+                                
+                            </div>
+                            <div>
+                                <span class="skills1__percentage">55%</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div> 
+                        <img src="assets/img/Video_Editing Software.jpg" alt="" class="skills__img">             
+                        
+                        
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+             <!--===== Project =====-->
+        <section class="project section" id="project">
+            <h2 class="section-title">Project</h2>
+            <div class="project__container bd-grid">
+
+                <a href="" class="project__img">
+                    <img src="assets/img/project1.jpg" alt="">
+                </a>
+                <a href="" class="project__img">
+                    <img src="assets/img/project2.jpg" alt="">
+                </a>
+
+                <a href="" class="project__img">
+                    <img src="assets/img/project3.jpg" alt="">
+                </a>
+
+                <a href="" class="project__img">
+                    <img src="assets/img/project4.jpg" alt="">
+                </a>
+
+                <a href="" class="project__img">
+                    <img src="assets/img/project5.jpg" alt="">
+                </a>
+
+                <a href="" class="project__img">
+                    <img src="assets/img/project6.jpg" alt="">
+                </a>
+            </div>
+        </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
+                        <input type="button" value="Submit" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+       
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Julianne</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; 2024 Bedimcode. All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
