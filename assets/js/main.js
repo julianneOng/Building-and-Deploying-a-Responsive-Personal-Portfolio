@@ -42,6 +42,25 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
+const contactForm = document.getElementById('contact--form')
+      contactMessage = document.getElementById('contact-message')
+const sendEmail = (e) =>{
+   e.preventDefault()
+
+   emailjs.sendForm('service_9xuhr9d','template_mqu0oec','#contact--form','uw4mp6yuq3Jj873Bm')
+      .then(() =>{
+         contactMessage.textContent = 'Message sent successfully'
+
+         setTimeout(() =>{
+            contactMessage.textContent = ''
+         }, 5000)
+
+         contactForm.reset()
+    },   () => {
+         contactMessage.textContent = 'Message not sent (service error)'
+      })
+}
+contactForm.addEventListener('submit', sendEmail)      
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
@@ -53,7 +72,6 @@ const sr = ScrollReveal({
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400});
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills1__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.project__img',{delay: 400});
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
